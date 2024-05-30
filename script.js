@@ -4,7 +4,10 @@ const input = document.getElementById('search-input');
 const currentImageContainer = document.getElementById('current-image-container');
 const searchHistory = document.getElementById('search-history');
 
-document.addEventListener('DOMContentLoaded', getCurrentImageOfTheDay);
+document.addEventListener('DOMContentLoaded', () => {
+    getCurrentImageOfTheDay();
+    addSearchToHistory();
+});
 form.addEventListener('submit', getImageOfTheDay);
 
 function getCurrentImageOfTheDay() {
